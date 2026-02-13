@@ -189,10 +189,10 @@
               </p>
               <div class="hs-actions">
                 <a class="btn small"
-                  href="https://learn.microsoft.com/en-us/users/prakashmadai-6920/credentials/ab195c66800a2772"
+                  href="https://learn.microsoft.com/en-us/users/prakashmadai-7804/credentials/8e0fcb488aa5bb8f"
                   target="_blank">Credential</a>
                 <a class="btn small"
-                  href="https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/"
+                  href="https://learn.microsoft.com/en-us/credentials/certifications/exams/dp-600/"
                   target="_blank">Details</a>
               </div>
             </div>
@@ -201,32 +201,12 @@
                 onerror="this.style.display='none'" />
             </div>
           </div>
-
-          <!-- Slide 4 -->
-          <div class="hs-slide">
-            <div class="hs-left">
-              <h3>Lean Six Sigma Green Belt</h3>
-              <p class="muted">Council for Six Sigma • Dec 2025</p>
-              <p class="hs-text">
-                Structured process improvement techniques to reduce defects and improve efficiency using DMAIC,
-                metrics, and root cause analysis.
-              </p>
-              <div class="hs-actions">
-                <a class="btn small"
-                  href="https://www.sixsigmacouncil.org/lean-six-sigma-green-belt-certification-standard/"
-                  target="_blank">Details</a>
-              </div>
-            </div>
-            <div class="hs-right">
-              <img class="hs-img" src="images/certs/green_belt.png" alt="Lean Six Sigma"
-                onerror="this.style.display='none'" />
-            </div>
-          </div>
+       
 
           <!-- Slide 5 -->
           <div class="hs-slide">
             <div class="hs-left">
-              <h3>Configuring Utility Networks in ArcGIS (Instructor-Led)</h3>
+              <h3>ArcGIS Enterprise: Introducing Utility Network (Instructor-Led)</h3>
               <p class="muted">Esri • Oct 2024</p>
               <p class="hs-text">
                 Instructor-led training on ArcGIS Utility Network concepts (asset packages, subnetworks, tracing,
@@ -311,29 +291,14 @@
   <!-- SKILLS -->
   <section class="section">
     <div class="container">
-      <h2>Skills</h2>
-
-      <dl class="skills-list">
+      <h2>Technical Skills</h2>
+      <dl class="skills-dl">
         <div>
-          <dt>Programming Languages</dt>
+          <dt>Enterprise GIS Platforms</dt>
           <dd>
-            <span class="skill-item">Python</span>
-            <span class="skill-item">R</span>
-          </dd>
-        </div>
-
-        <div>
-          <dt>Enterprise GIS & Platforms</dt>
-          <dd>
-            <span class="skill-item">ArcGIS Enterprise</span>
-            <span class="skill-item">ArcGIS Server</span>
-            <span class="skill-item">Portal for ArcGIS</span>
-            <span class="skill-item">ArcGIS Data Store</span>
-            <span class="skill-item">ArcGIS Web Adaptor (IIS)</span>
-            <span class="skill-item">Enterprise Geodatabase (SDE) Administration</span>
+            <span class="skill-item">ArcGIS Enterprise (Portal, Server, Data Store)</span>
             <span class="skill-item">ArcGIS Pro</span>
-            <span class="skill-item">QGIS</span>
-            <span class="skill-item">CityWorks</span>
+            <span class="skill-item">ArcGIS Desktop</span>
           </dd>
         </div>
 
@@ -480,7 +445,8 @@
     </div>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="scripts/icon.js"></script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="scripts/icon.js"></script>
 
   <script>
     (function () {
@@ -526,4 +492,12 @@
       slider.tabIndex = 0;
 
       let timer = setInterval(() => goTo(idx + 1), 9000);
-      slider.addEventListener('mouseenter', () => clearI
+      slider.addEventListener('mouseenter', () => clearInterval(timer));
+      slider.addEventListener('mouseleave', () => {
+        timer = setInterval(() => goTo(idx + 1), 9000);
+      });
+    })();
+  </script>
+</body>
+
+</html>
